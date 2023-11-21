@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+ <form method="post" action="{% url 'consumption:register' %}" style="display:inline;">
+     {% csrf_token %}
+     {{form.as_div}}
+     <button type="submit" class="delete btn btn-danger mt-4" style="width: 100%;">Отправить</button>
+ </form>
+
+{% endblock content %}

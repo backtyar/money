@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for i in user_category%}
+<ul>{{i.my_category}}</ul>
+
+{%endfor%}
+{{user_cat.my_category}}
+{% endblock content %}
